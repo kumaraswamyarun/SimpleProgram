@@ -13,6 +13,7 @@ public class LoginAction extends Action {
 	public ActionForward execute(ActionMapping mapping,ActionForm form,HttpServletRequest request,HttpServletResponse response) throws Exception{
 		LoginForm loginForm=(LoginForm)form;
 		System.out.println(loginForm.getPassword());
+		System.out.println("Hello World");
 		return mapping.findForward(SUCCESS);
 	}
 }
